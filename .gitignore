@@ -1,11 +1,11 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
-/src/config.js
+# /src/config.js	Adding config to github
 # dependencies
 /node_modules
 api/node_modules
-api/config
+# api/config	Adding config to github
 .sass-cache
-/public/config.js
+# /public/config.js	Adding config to github
 # testing
 /coverage
 # production

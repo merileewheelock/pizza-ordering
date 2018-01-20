@@ -1,5 +1,8 @@
 {
-  "name": "travelist",
+  "name": "pizza-toppings",
+  "jest": {
+    "verbose": true
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,12 +19,13 @@
     "redux-promise": "^0.5.3"
   },
   "devDependencies": {
+    "jest": "^22.1.4",
     "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
   }
 }

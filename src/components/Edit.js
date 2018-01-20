@@ -27,10 +27,14 @@ class Edit extends Component{
     	event.preventDefault();
     	var optionId = this.state.option.id;
 		var optionName = this.state.option.name;
-		var optionPriceToEdit = $('#edit-price').val();
-		// console.log(optionId)
-		// console.log(optionName)
-		// console.log(optionPriceToEdit)
+
+		// to handle empty price submission
+		if ($('#edit-price').val() === ''){
+			var optionPriceToEdit = this.state.option.price;
+		}else{
+			optionPriceToEdit = $('#edit-price').val();
+		}
+
 		$.ajax({
 			method: 'POST',
 			url: 'http://localhost:3000/edit',

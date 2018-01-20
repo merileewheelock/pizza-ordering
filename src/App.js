@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Order from './containers/Order';
+import Submitted from './components/Submitted';
 import Login from './containers/Login';
 import Admin from './components/Admin';
 import Edit from './components/Edit';
@@ -17,6 +18,7 @@ class App extends Component {
 					<div>
 						<Route exact path="/" component={Home} />
 						<Route exact path="/order" component={Order} />
+						<Route exact path="/submitted" component={Submitted} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/admin" component={Admin} />
 						<Route exact path="/edit/:optionId" component={Edit} />

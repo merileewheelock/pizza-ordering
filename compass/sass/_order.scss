@@ -15,7 +15,7 @@
 	background-color: LightGoldenRodYellow;
 }
 
-.size:hover{
+.pizza-size:hover{
 	background-color: LightGoldenRodYellow;
 }
 
@@ -25,4 +25,11 @@
 
 .total-price{
 	margin-top: 100px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: Navy;
+}
+
+.order-btn{
+	margin-bottom: 20px;
 }

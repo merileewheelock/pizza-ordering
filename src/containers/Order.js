@@ -10,6 +10,7 @@ class Order extends Component{
 		}
 		this.handleTopping = this.handleTopping.bind(this);
 		this.handleSize = this.handleSize.bind(this);
+		this.handleButton = this.handleButton.bind(this);
 	}
 
 	componentDidMount(){
@@ -20,17 +21,35 @@ class Order extends Component{
         });
     }
 
-    handleTopping(value){
-    	$(this).addClass("selected");
+    handleTopping(value, index){
+    	var clickedTopping = $('.topping')
+
+    	if ($(clickedTopping[index]).hasClass('selected')){
+    		// topping is already added, don't add again
+    		return;
+    	}
+
+    	$(clickedTopping[index]).addClass('selected');
+
     	this.setState({
     		totalPrice: this.state.totalPrice + value
     	})
     }
 
-    handleSize(value){
+    handleSize(value, index){
+
+    	// console.log($('.pizza-size'))
+    	// var clickedSize = $('.pizza-size');
+
+    	// $(clickedSize[index]).addClass('selected');
+
     	this.setState({
     		totalPrice: this.state.totalPrice + value
     	})
+    }
+
+    handleButton(){
+    	this.props.history.push('/submitted');
     }
 
 	render(){
@@ -39,7 +58,7 @@ class Order extends Component{
 		this.state.options.map((option, index)=>{
 			if (option.topping === 1){
 				toppingsArray.push(
-					<tr key={index} className="topping" onClick={()=>this.handleTopping(option.price)}>
+					<tr key={index} className="topping" onClick={()=>this.handleTopping(option.price, index)}>
 						<td>{option.name}</td>
 						<td>${option.price.toFixed(2)}</td>
 					</tr>
@@ -51,7 +70,7 @@ class Order extends Component{
 		this.state.options.map((option, index)=>{
 			if (option.size === 1){
 				sizeArray.push(
-					<tr key={index} className="size" onClick={()=>this.handleSize(option.price)}>
+					<tr key={index} className="pizza-size" onClick={()=>this.handleSize(option.price, index)}>
 						<td>{option.name}</td>
 						<td>${option.price.toFixed(2)}</td>
 					</tr>
@@ -67,7 +86,7 @@ class Order extends Component{
 
 				<div className="row">
 
-					<div className="pizza-size col-sm-6">
+					<div className="pizza-size-section col-sm-6">
 						<table className="table">
 							<thead>
 								<tr>
@@ -81,7 +100,10 @@ class Order extends Component{
 						</table>
 
 						<div className="total-price row text-center">
-							Price: ${this.state.totalPrice.toFixed(2)}
+							order total: ${this.state.totalPrice.toFixed(2)}
+						</div>
+						<div className="row text-center">
+							<img src="/images/dishes.png" alt="plate" />
 						</div>
 					</div>
 
@@ -99,6 +121,12 @@ class Order extends Component{
 						</table>
 					</div>
 
+				</div>
+
+				<div className="row">
+					<div className="text-center">
+						<button className="order-btn btn btn-default" onClick={this.handleButton}>Order</button>
+					</div>
 				</div>
 
 			</div>
