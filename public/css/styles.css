@@ -1,0 +1,126 @@
+/* line 1, ../../compass/sass/_home.scss */
+.site-title {
+  font-family: "Poiret One", sans-serif;
+  font-size: 100px;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+/* line 1, ../../compass/sass/_order.scss */
+.order-page {
+  background-color: white;
+  opacity: 0.7;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* line 8, ../../compass/sass/_order.scss */
+.order-header {
+  font-family: "Poiret One", sans-serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 14, ../../compass/sass/_order.scss */
+.topping:hover {
+  background-color: LightGoldenRodYellow;
+}
+
+/* line 18, ../../compass/sass/_order.scss */
+.size:hover {
+  background-color: LightGoldenRodYellow;
+}
+
+/* line 22, ../../compass/sass/_order.scss */
+.selected {
+  background-color: PaleTurquoise;
+}
+
+/* line 26, ../../compass/sass/_order.scss */
+.total-price {
+  margin-top: 100px;
+}
+
+/* line 1, ../../compass/sass/_login.scss */
+.login-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+/* line 7, ../../compass/sass/_login.scss */
+.login-header {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 14, ../../compass/sass/_login.scss */
+.login-btn {
+  margin-top: 20px;
+}
+
+/* line 1, ../../compass/sass/_admin-edit.scss */
+.admin-edit-page {
+  background-color: white;
+  opacity: 0.7;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* line 8, ../../compass/sass/_admin-edit.scss */
+.admin-edit-header {
+  font-family: "Poiret One", sans-serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 14, ../../compass/sass/_admin-edit.scss */
+.option:hover {
+  background-color: LightGoldenRodYellow;
+}
+
+/* line 9, ../../compass/sass/styles.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 19, ../../compass/sass/styles.scss */
+.App {
+  height: 100vh;
+  background-color: #232323;
+  background-image: linear-gradient(rgba(35, 35, 35, 0.8), rgba(35, 35, 35, 0.8)), url("../images/pizza-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 29, ../../compass/sass/styles.scss */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 33, ../../compass/sass/styles.scss */
+.btn {
+  font-family: "Poiret One", sans-serif;
+  font-size: 16px;
+}
+
+/* line 38, ../../compass/sass/styles.scss */
+a {
+  color: SeaGreen;
+}
+
+/* line 41, ../../compass/sass/styles.scss */
+a:hover {
+  text-decoration: none;
+}

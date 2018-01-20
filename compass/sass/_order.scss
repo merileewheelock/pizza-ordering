@@ -1,0 +1,28 @@
+.order-page{
+	background-color: white;
+	opacity: 0.7;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.order-header{
+	font-family: $header-font;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.topping:hover{
+	background-color: LightGoldenRodYellow;
+}
+
+.size:hover{
+	background-color: LightGoldenRodYellow;
+}
+
+.selected{
+	background-color: PaleTurquoise;
+}
+
+.total-price{
+	margin-top: 100px;
+}
