@@ -7,7 +7,7 @@ class Navbar extends Component{
 			<div className="text-right">
 				<div className="nav-links"><Link to="/">Home</Link></div>
 				<div className="nav-links"><Link to="/order">Order</Link></div>
-				<div className="nav-links"><Link to="/admin-login">Admin</Link></div>
+				<div className="nav-links"><Link to="/login">Admin</Link></div>
 			</div>
 		)
 	}

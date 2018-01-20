@@ -33,7 +33,7 @@ class Login extends Component{
 
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.loginResponse.msg === 'loginSuccess'){
-			this.props.history.push('/edit');
+			this.props.history.push('/admin');
 		}else if(nextProps.loginResponse.msg === 'badUsername'){
 			this.setState({
 				loginMessage: "Sorry, that is not a valid username."

@@ -46,4 +46,43 @@ router.post('/login', (req, res)=>{
 	})
 })
 
+router.get('/admin/:id', (req, res)=>{
+	connection.query(`SELECT * FROM options WHERE id=${req.params.id}`, (error, results)=>{
+		if (results.length == 0){
+			res.json({msg: "noResult"})
+		}else{
+			res.json(results[0])
+		}
+	})
+})
+
+router.post('/edit', (req, res)=>{
+	var optionId = req.body.optionId
+	var optionName = req.body.optionName
+	var optionPriceToEdit = req.body.optionPriceToEdit
+	console.log(optionName)
+	console.log(optionPriceToEdit)
+	console.log(optionId)
+
+	if (optionId <= 12){
+		//these are toppings
+		connection.query(`REPLACE INTO options VALUES (${optionId}, "${optionName}", "${optionPriceToEdit}", 1, 0);`, (error, results)=>{
+			if(error) throw error
+			res.json({
+				msg: 'success'
+			})
+			// console.log("edited")
+		})
+	}else if (optionId > 12){
+		//these are pizza sizes
+		connection.query(`REPLACE INTO options VALUES (${optionId}, "${optionName}", "${optionPriceToEdit}", 0, 1);`, (error, results)=>{
+			if(error) throw error
+			res.json({
+				msg: 'success'
+			})
+			console.log("edited")
+		})
+	}
+})
+
 module.exports = router;

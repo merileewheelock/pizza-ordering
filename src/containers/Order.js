@@ -37,7 +37,7 @@ class Order extends Component{
 
 		var toppingsArray = [];
 		this.state.options.map((option, index)=>{
-			if (option.topping == 1){
+			if (option.topping === 1){
 				toppingsArray.push(
 					<tr key={index} className="topping" onClick={()=>this.handleTopping(option.price)}>
 						<td>{option.name}</td>
@@ -49,7 +49,7 @@ class Order extends Component{
 
 		var sizeArray = [];
 		this.state.options.map((option, index)=>{
-			if (option.size == 1){
+			if (option.size === 1){
 				sizeArray.push(
 					<tr key={index} className="size" onClick={()=>this.handleSize(option.price)}>
 						<td>{option.name}</td>

@@ -26,16 +26,16 @@ class Admin extends Component {
 				<tr key={index} className="option">
 					<td>{option.name}</td>
 					<td className="edit-link">
-						<Link to={`/option/edit/${option.id}`}>${option.price.toFixed(2)}</Link>
+						<Link to={`/edit/${option.id}`}>${option.price.toFixed(2)}</Link>
 					</td>
 				</tr>
 			)
 		});
 
 		return(
-			<div className="admin-edit-page container col-sm-6 col-sm-offset-3">
+			<div className="admin-page container col-sm-6 col-sm-offset-3">
 				<div className="row">
-					<h1 className="admin-edit-header text-center">edit prices</h1>
+					<h1 className="admin-header text-center">edit prices</h1>
 				</div>
 				<table className="table">
 					<thead>

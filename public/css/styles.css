@@ -62,27 +62,47 @@
   margin-top: 20px;
 }
 
-/* line 1, ../../compass/sass/_admin-edit.scss */
-.admin-edit-page {
+/* line 1, ../../compass/sass/_admin.scss */
+.admin-page {
   background-color: white;
   opacity: 0.7;
   margin-top: 20px;
   border-radius: 10px;
 }
 
-/* line 8, ../../compass/sass/_admin-edit.scss */
-.admin-edit-header {
+/* line 8, ../../compass/sass/_admin.scss */
+.admin-header {
   font-family: "Poiret One", sans-serif;
   font-size: 50px;
   margin-bottom: 20px;
 }
 
-/* line 14, ../../compass/sass/_admin-edit.scss */
+/* line 14, ../../compass/sass/_admin.scss */
 .option:hover {
   background-color: LightGoldenRodYellow;
 }
 
-/* line 9, ../../compass/sass/styles.scss */
+/* line 1, ../../compass/sass/_edit.scss */
+.edit-page {
+  background-color: white;
+  opacity: 0.7;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* line 8, ../../compass/sass/_edit.scss */
+.edit-header {
+  font-family: "Poiret One", sans-serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 14, ../../compass/sass/_edit.scss */
+.save-btn {
+  margin-bottom: 20px;
+}
+
+/* line 10, ../../compass/sass/styles.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
   margin: 0;
   padding: 0;
@@ -93,7 +113,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background: transparent;
 }
 
-/* line 19, ../../compass/sass/styles.scss */
+/* line 20, ../../compass/sass/styles.scss */
 .App {
   height: 100vh;
   background-color: #232323;
@@ -104,23 +124,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background-size: cover;
 }
 
-/* line 29, ../../compass/sass/styles.scss */
+/* line 30, ../../compass/sass/styles.scss */
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* line 33, ../../compass/sass/styles.scss */
+/* line 34, ../../compass/sass/styles.scss */
 .btn {
   font-family: "Poiret One", sans-serif;
   font-size: 16px;
 }
 
-/* line 38, ../../compass/sass/styles.scss */
+/* line 39, ../../compass/sass/styles.scss */
 a {
   color: SeaGreen;
 }
 
-/* line 41, ../../compass/sass/styles.scss */
+/* line 42, ../../compass/sass/styles.scss */
 a:hover {
   text-decoration: none;
 }

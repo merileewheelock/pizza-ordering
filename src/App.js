@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Order from './containers/Order';
 import Login from './containers/Login';
 import Admin from './components/Admin';
+import Edit from './components/Edit';
 
 class App extends Component {
 	render() {
@@ -16,8 +17,9 @@ class App extends Component {
 					<div>
 						<Route exact path="/" component={Home} />
 						<Route exact path="/order" component={Order} />
-						<Route exact path="/admin-login" component={Login} />
-						<Route exact path="/edit" component={Admin} />
+						<Route exact path="/login" component={Login} />
+						<Route exact path="/admin" component={Admin} />
+						<Route exact path="/edit/:optionId" component={Edit} />
 					</div>
 				</div>
 			</Router>
