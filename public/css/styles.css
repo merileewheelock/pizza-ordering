@@ -45,6 +45,11 @@
 }
 
 /* line 26, ../../compass/sass/_order.scss */
+.off {
+  background-color: lightgray;
+}
+
+/* line 30, ../../compass/sass/_order.scss */
 .total-price {
   margin-top: 100px;
   margin-bottom: 10px;
@@ -52,7 +57,7 @@
   color: Navy;
 }
 
-/* line 33, ../../compass/sass/_order.scss */
+/* line 37, ../../compass/sass/_order.scss */
 .order-btn {
   margin-bottom: 20px;
 }

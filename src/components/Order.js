@@ -22,6 +22,7 @@ class Order extends Component{
     }
 
     handleTopping(value, index){
+    	console.log($('.topping'))
     	var clickedTopping = $('.topping')
 
     	if ($(clickedTopping[index]).hasClass('selected')){
@@ -38,10 +39,30 @@ class Order extends Component{
 
     handleSize(value, index){
 
-    	// console.log($('.pizza-size'))
-    	// var clickedSize = $('.pizza-size');
+    	var clickedSize = $('.pizza-size');
+    	var pizzaArrayIndex = index - 12;
 
-    	// $(clickedSize[index]).addClass('selected');
+    	if ($(clickedSize[pizzaArrayIndex]).hasClass('selected')){
+    		// pizza size already selected, no more choosing a size
+    		return;
+    	}
+
+    	if (pizzaArrayIndex === 0){
+    		$(clickedSize[1]).addClass('off');
+    		$(clickedSize[2]).addClass('off');
+    	}else if (pizzaArrayIndex === 1){
+    		$(clickedSize[0]).addClass('off');
+    		$(clickedSize[2]).addClass('off');
+    	}else if (pizzaArrayIndex === 2){
+    		$(clickedSize[0]).addClass('off');
+    		$(clickedSize[1]).addClass('off');
+    	}
+    	if ($(clickedSize[pizzaArrayIndex]).hasClass('off')){
+    		// pizza size already selected, no more choosing a size
+    		return;
+    	}
+
+    	$(clickedSize[pizzaArrayIndex]).addClass('selected');
 
     	this.setState({
     		totalPrice: this.state.totalPrice + value
