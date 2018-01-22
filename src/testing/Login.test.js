@@ -1,10 +1,21 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import Login from '../containers/Login';
+import LoginAction from '../actions/LoginAction';
+import config from '../config';
 
 describe('Login', ()=>{
-	it('renders without crashing', function(){
-		const div = document.createElement('div');
-		ReactDOM.render(<Login />, div);
+	it('fetches Login from backend', function(){
+		const loginResult = LoginAction();
+		expect(loginResult.type).toBe('LOGIN');
+	});
+
+	it('returns with data', function(){
+		const loginResult = LoginAction();
+		expect(loginResult.payload).not.toBeNull();
+	});
+
+	it('goes to correct login address', function(){
+		const loginResult = LoginAction();
+		const address = config.hostAddress + '/login';
+		expect(address).toEqual('http://127.0.0.1:3000/login');
 	});
 });

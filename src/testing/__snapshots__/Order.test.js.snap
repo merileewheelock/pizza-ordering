@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="order-page container col-sm-6 col-sm-offset-3"
+>
+  <div
+    className="row"
+  >
+    <h1
+      className="order-header text-center"
+    >
+      my pizza
+    </h1>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="pizza-size-section col-sm-6"
+    >
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th
+              className="text-center"
+            >
+              Size
+            </th>
+            <th
+              className="text-center"
+            >
+              Price
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="text-center"
+        />
+      </table>
+      <div
+        className="total-price row text-center"
+      >
+        order total: $
+        0.00
+      </div>
+      <div
+        className="row text-center"
+      >
+        <img
+          alt="plate"
+          src="/images/dishes.png"
+        />
+      </div>
+    </div>
+    <div
+      className="col-sm-6"
+    >
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th
+              className="text-center"
+            >
+              Topping
+            </th>
+            <th
+              className="text-center"
+            >
+              Price
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="text-center"
+        />
+      </table>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="text-center"
+    >
+      <button
+        className="order-btn btn btn-default"
+        onClick={[Function]}
+      >
+        Order
+      </button>
+    </div>
+  </div>
+</div>
+`;

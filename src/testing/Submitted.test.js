@@ -1,10 +1,10 @@
 import React from 'react';
-import Order from '../components/Order';
+import Submitted from '../components/Submitted';
 import TestRenderer from 'react-test-renderer'; // ES6
 
 it('renders correctly', () => {
     const tree = TestRenderer
-        .create(<Order></Order>)
+        .create(<Submitted></Submitted>)
         .toJSON();
     expect(tree).toMatchSnapshot();
 });

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="admin-page container col-sm-6 col-sm-offset-3"
+>
+  <div
+    className="row"
+  >
+    <h1
+      className="admin-header text-center"
+    >
+      edit prices
+    </h1>
+  </div>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr>
+        <th
+          className="text-center"
+        >
+          Item
+        </th>
+        <th
+          className="text-center"
+        >
+          Price
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="text-center"
+    />
+  </table>
+</div>
+`;

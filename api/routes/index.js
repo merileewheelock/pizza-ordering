@@ -80,7 +80,7 @@ router.post('/edit', (req, res)=>{
 			res.json({
 				msg: 'success'
 			})
-			console.log("edited")
+			// console.log("edited")
 		})
 	}
 })

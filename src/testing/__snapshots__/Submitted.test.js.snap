@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <h1
+    className="submitted-header text-center"
+  >
+    Your order is on its way!
+  </h1>
+  <div
+    className="text-center"
+  >
+    <img
+      alt="deliver-man"
+      src="/images/delivery-man.png"
+    />
+  </div>
+</div>
+`;
